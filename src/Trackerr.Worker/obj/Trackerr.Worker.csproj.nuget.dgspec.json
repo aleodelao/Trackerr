@@ -1,0 +1,412 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/adelao/Projects/trackerr/src/Trackerr.Worker/Trackerr.Worker.csproj": {}
+  },
+  "projects": {
+    "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj",
+        "projectName": "Trackerr.Core",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj",
+        "projectName": "Trackerr.Downloaders",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj",
+        "projectName": "Trackerr.Import",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Import/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj",
+        "projectName": "Trackerr.Infrastructure",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj",
+        "projectName": "Trackerr.Metadata",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Worker/Trackerr.Worker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Worker/Trackerr.Worker.csproj",
+        "projectName": "Trackerr.Worker",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Worker/Trackerr.Worker.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Worker/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj"
+              },
+              "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

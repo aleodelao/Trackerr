@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trackerr.Core\Trackerr.Core.csproj" />
+    <ProjectReference Include="..\Trackerr.Metadata\Trackerr.Metadata.csproj" />
+    <ProjectReference Include="..\Trackerr.Infrastructure\Trackerr.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

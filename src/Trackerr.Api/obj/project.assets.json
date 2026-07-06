@@ -1,0 +1,259 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Trackerr.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Trackerr.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trackerr.Core.dll": {}
+        }
+      },
+      "Trackerr.Downloaders/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Trackerr.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trackerr.Downloaders.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trackerr.Downloaders.dll": {}
+        }
+      },
+      "Trackerr.Import/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Trackerr.Core": "1.0.0",
+          "Trackerr.Infrastructure": "1.0.0",
+          "Trackerr.Metadata": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trackerr.Import.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trackerr.Import.dll": {}
+        }
+      },
+      "Trackerr.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Trackerr.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trackerr.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trackerr.Infrastructure.dll": {}
+        }
+      },
+      "Trackerr.Metadata/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Trackerr.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trackerr.Metadata.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trackerr.Metadata.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.15": {
+      "sha512": "QQW4lLEgMMgVSAlTocaoEf5xZstKZFLyIYtrRP/bq3BmvsJkU8ugiU7MaUWz4vEednZLNhGq1JSZq22QFQqIfg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Trackerr.Core/1.0.0": {
+      "type": "project",
+      "path": "../Trackerr.Core/Trackerr.Core.csproj",
+      "msbuildProject": "../Trackerr.Core/Trackerr.Core.csproj"
+    },
+    "Trackerr.Downloaders/1.0.0": {
+      "type": "project",
+      "path": "../Trackerr.Downloaders/Trackerr.Downloaders.csproj",
+      "msbuildProject": "../Trackerr.Downloaders/Trackerr.Downloaders.csproj"
+    },
+    "Trackerr.Import/1.0.0": {
+      "type": "project",
+      "path": "../Trackerr.Import/Trackerr.Import.csproj",
+      "msbuildProject": "../Trackerr.Import/Trackerr.Import.csproj"
+    },
+    "Trackerr.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Trackerr.Infrastructure/Trackerr.Infrastructure.csproj",
+      "msbuildProject": "../Trackerr.Infrastructure/Trackerr.Infrastructure.csproj"
+    },
+    "Trackerr.Metadata/1.0.0": {
+      "type": "project",
+      "path": "../Trackerr.Metadata/Trackerr.Metadata.csproj",
+      "msbuildProject": "../Trackerr.Metadata/Trackerr.Metadata.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Microsoft.AspNetCore.OpenApi >= 9.0.15",
+      "Trackerr.Core >= 1.0.0",
+      "Trackerr.Downloaders >= 1.0.0",
+      "Trackerr.Import >= 1.0.0",
+      "Trackerr.Infrastructure >= 1.0.0",
+      "Trackerr.Metadata >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/adelao/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Api/Trackerr.Api.csproj",
+      "projectName": "Trackerr.Api",
+      "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Api/Trackerr.Api.csproj",
+      "packagesPath": "/home/adelao/.nuget/packages/",
+      "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Api/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/adelao/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "/usr/lib64/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+              "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+            },
+            "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj": {
+              "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Downloaders/Trackerr.Downloaders.csproj"
+            },
+            "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj": {
+              "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Import/Trackerr.Import.csproj"
+            },
+            "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj": {
+              "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Infrastructure/Trackerr.Infrastructure.csproj"
+            },
+            "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj": {
+              "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Metadata/Trackerr.Metadata.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.15, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

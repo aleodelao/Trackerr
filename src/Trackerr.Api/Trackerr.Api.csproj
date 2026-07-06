@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trackerr.Core\Trackerr.Core.csproj" />
+    <ProjectReference Include="..\Trackerr.Infrastructure\Trackerr.Infrastructure.csproj" />
+    <ProjectReference Include="..\Trackerr.Metadata\Trackerr.Metadata.csproj" />
+    <ProjectReference Include="..\Trackerr.Downloaders\Trackerr.Downloaders.csproj" />
+    <ProjectReference Include="..\Trackerr.Import\Trackerr.Import.csproj" />
+  </ItemGroup>
+
+</Project>

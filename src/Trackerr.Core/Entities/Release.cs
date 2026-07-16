@@ -5,12 +5,14 @@ namespace Trackerr.Core.Entities;
 public class Release
 {
     public Guid Id { get; set; }
-    public string MusicBrainzId { get; set; } = string.Empty;
+    public string? MusicBrainzId { get; set; }
     public string Title { get; set; } = string.Empty;
     public ReleaseType Type { get; set; }
     public int? Year { get; set; }
     public DateOnly? ReleaseDate { get; set; }
     public string? CoverArtUrl { get; set; }
     public bool Monitored { get; set; }
+    public Guid ArtistId { get; set; }
+    public Artist Artist { get; set; } = null!;
     public List<Track> Tracks { get; set; } = [];
 }

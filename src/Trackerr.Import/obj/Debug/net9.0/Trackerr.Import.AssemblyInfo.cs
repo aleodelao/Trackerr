@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trackerr.Import")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f1acfa64d6d3c9563eb3775ee9df6c4f32750be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trackerr.Import")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trackerr.Import")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

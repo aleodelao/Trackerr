@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trackerr.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bc9d5933b724ee75ae3d4e4e79b94911cbe2487")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trackerr.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trackerr.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

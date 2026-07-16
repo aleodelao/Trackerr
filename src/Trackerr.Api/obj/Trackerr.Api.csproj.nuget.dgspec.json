@@ -27,6 +27,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Application/Trackerr.Application.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Application/Trackerr.Application.csproj"
+              },
               "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
                 "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
               },
@@ -64,6 +67,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.*, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.*, )"
             }
           },
           "imports": [
@@ -81,6 +94,76 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/adelao/Projects/trackerr/src/Trackerr.Application/Trackerr.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/adelao/Projects/trackerr/src/Trackerr.Application/Trackerr.Application.csproj",
+        "projectName": "Trackerr.Application",
+        "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Application/Trackerr.Application.csproj",
+        "packagesPath": "/home/adelao/.nuget/packages/",
+        "outputPath": "/home/adelao/Projects/trackerr/src/Trackerr.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/adelao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj": {
+                "projectPath": "/home/adelao/Projects/trackerr/src/Trackerr.Core/Trackerr.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -327,6 +410,26 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.*, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.*, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[10.0.10, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

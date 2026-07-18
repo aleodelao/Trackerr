@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Trackerr.Infrastructure.Persistence;
 
@@ -10,9 +11,11 @@ using Trackerr.Infrastructure.Persistence;
 namespace Trackerr.Infrastructure.Migrations
 {
     [DbContext(typeof(TrackerrDbContext))]
-    partial class TrackerrDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260718085114_RenamedArtistMonitoredColumn")]
+    partial class RenamedArtistMonitoredColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.18");

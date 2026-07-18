@@ -30,7 +30,7 @@ public class ArtistService(IArtistRepository artistsRepository) : IArtistService
         {
             Name = request.Name,
             MusicBrainzId = request.MusicBrainzId,
-            Monitored = false
+            IsMonitored = false
         };
 
         await _artistsRepository.AddAsync(artist);
@@ -47,7 +47,7 @@ public class ArtistService(IArtistRepository artistsRepository) : IArtistService
             return Result<ArtistResponse>.Failure(Errors.Artist.NotFound);
 
         artist.Name = request.Name;
-        artist.Monitored = request.Monitored;
+        artist.IsMonitored = request.Monitored;
 
         await _artistsRepository.UpdateAsync(artist);
         await _artistsRepository.SaveChangesAsync();
@@ -55,18 +55,18 @@ public class ArtistService(IArtistRepository artistsRepository) : IArtistService
         return Result<ArtistResponse>.Success(artist.ToResponse());
     }
 
-    public async Task<Result<ArtistResponse>> MonitorAsync(Guid id)
+    public async Task<Result> SetMonitoringAsync(Guid id, bool isMonitored)
     {
         var artist = await _artistsRepository.GetByIdAsync(id);
 
         if (artist is null)
-            return Result<ArtistResponse>.Failure(Errors.Artist.NotFound);
+            return Result.Failure(Errors.Artist.NotFound);
 
-        artist.Monitored = true;
+        artist.IsMonitored = isMonitored;
 
         await _artistsRepository.UpdateAsync(artist);
         await _artistsRepository.SaveChangesAsync();
 
-        return Result<ArtistResponse>.Success(artist.ToResponse());
+        return Result.Success();
     }
 }

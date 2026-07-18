@@ -10,7 +10,7 @@ public static class ArtistMapper
         {
             Id = artist.Id,
             Name = artist.Name,
-            Monitored = artist.Monitored,
+            Monitored = artist.IsMonitored,
             ReleaseCount = artist.Releases.Count,
             TrackCount = artist.Releases.Sum(r => r.Tracks.Count),
         };
@@ -22,7 +22,7 @@ public static class ArtistMapper
         {
             Id = artist.Id,
             Name = artist.Name,
-            Monitored = artist.Monitored,
+            Monitored = artist.IsMonitored,
             Releases = artist.Releases.Select(r => r.ToSummaryResponse()).ToList()
         };
     }

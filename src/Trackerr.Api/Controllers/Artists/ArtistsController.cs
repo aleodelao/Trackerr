@@ -43,8 +43,7 @@ public class ArtistsController(IArtistService artistService) : ControllerBase
     /// Searches artists
     /// </summary>
     [HttpGet("search")]
-    public async Task<ActionResult<List<ArtistResponse>>> Search(
-        [FromQuery] string? search = null)
+    public async Task<ActionResult<List<ArtistResponse>>> Search([FromQuery] string? search = null)
     {
         var artists = await _artistService.GetAllAsync(search);
 
@@ -74,6 +73,7 @@ public class ArtistsController(IArtistService artistService) : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = result.Value!.Id }, result.Value);
     }
 
+
     [HttpPut]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateArtistRequest request)
     {
@@ -92,5 +92,24 @@ public class ArtistsController(IArtistService artistService) : ControllerBase
             };
 
         return Ok(result.Value);
+    }
+
+
+    [HttpPost("{id:guid}/monitor")]
+    public async Task<IActionResult> SetMonitoring(Guid id, [FromBody] bool monitored)
+    {
+        var result = await _artistService.SetMonitoringAsync(id, monitored);
+
+        if (result.IsFailure)
+            return result.Error!.Type switch
+            {
+                ErrorType.NotFound => NotFound(result.Error),
+                _ => StatusCode(
+                    StatusCodes.Status500InternalServerError,
+                    result.Error
+                )
+            };
+
+        return NoContent();
     }
 }

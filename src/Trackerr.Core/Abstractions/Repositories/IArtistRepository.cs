@@ -4,7 +4,7 @@ namespace Trackerr.Core.Abstractions.Repositories;
 
 public interface IArtistRepository
 {
-    Task<List<Artist>> GetAllAsync();
+    Task<IEnumerable<Artist>> GetAllAsync(string? search);
     Task<Artist?> GetByIdAsync(Guid id);
     Task AddAsync(Artist artist);
     Task UpdateAsync(Artist artist);

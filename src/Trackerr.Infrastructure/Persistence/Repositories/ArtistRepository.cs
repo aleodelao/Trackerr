@@ -13,9 +13,16 @@ public class ArtistRepository : IArtistRepository
         _db = db;
     }
 
-    public async Task<List<Artist>> GetAllAsync()
+    public async Task<IEnumerable<Artist>> GetAllAsync(string? search = null)
     {
-        return await _db.Artists.ToListAsync();
+        IQueryable<Artist> query = _db.Artists.AsNoTracking();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(a => EF.Functions.Like(a.Name, $"%{search}%"));
+        }
+
+        return await query.OrderBy(a => a.Name).ToListAsync();
     }
 
     public async Task<Artist?> GetByIdAsync(Guid id)

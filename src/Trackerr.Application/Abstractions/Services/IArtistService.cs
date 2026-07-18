@@ -5,8 +5,9 @@ namespace Trackerr.Application.Abstractions.Services;
 
 public interface IArtistService
 {
-    Task<List<Artist>> GetAllAsync();
-    Task<Artist?> GetByIdAsync(Guid id);
-    Task<Artist> AddAsync(CreateArtistRequest request);
-    Task MonitorAsync(Guid id);
+    Task<List<ArtistResponse>> GetAllAsync(string? search);
+    Task<ArtistDetailResponse?> GetByIdAsync(Guid id);
+    Task<Result<ArtistResponse>> AddAsync(CreateArtistRequest request);
+    Task<Result<ArtistResponse>> UpdateAsync(Guid id, UpdateArtistRequest request);
+    Task<Result<ArtistResponse>> MonitorAsync(Guid id);
 }
